@@ -13,12 +13,12 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo 'Oops! That page can&rsquo;t be found.'; ?></h1>
-				</header><!-- .page-header -->
+				</header>
 
 				<div class="page-content">
 					<p><?php echo 'It looks like nothing was found at this location. Maybe try one of the links below or a search?'; ?></p>
 
-					<?php getchefsearch_form(); ?>
+					<?php get_search_form(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
@@ -36,21 +36,20 @@ get_header(); ?>
 							) );
 						?>
 						</ul>
-					</div><!-- .widget -->
+					</div>
 					<?php endif; ?>
 
 					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( 'Try looking in the monthly archives. %1$s', convertchefsmilies( ':)' ) ) . '</p>';
+						$archive_content = '<p>' . sprintf( 'Try looking in the monthly archives. %1$s', convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 
 					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+				</div>
+			</section>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php get_footer(); ?>

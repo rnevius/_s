@@ -75,7 +75,7 @@ get_header(); ?>
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
 				?>
-			</header><!-- .page-header -->
+			</header>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -98,8 +98,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+		</main>
+	</section>
 
-<?php getchefsidebar(); ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

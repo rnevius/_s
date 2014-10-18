@@ -11,13 +11,12 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php chefs_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="entry-content">
 		<?php
-			/* translators: %s: Name of current post */
 			the_content( sprintf(
 				'Continue reading %s <span class="meta-nav">&rarr;</span>', 
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
@@ -30,9 +29,9 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="entry-footer">
 		<?php chefs_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</footer>
+</article>

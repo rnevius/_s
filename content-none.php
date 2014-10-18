@@ -11,23 +11,23 @@
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php echo 'Nothing Found'; ?></h1>
-	</header><!-- .page-header -->
+	</header>
 
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
 			<p><?php printf( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
-		<?php elseif ( ischefsearch() ) : ?>
+		<?php elseif ( is_search() ) : ?>
 
 			<p><?php echo 'Sorry, but nothing matched your search terms. Please try again with some different keywords.'; ?></p>
-			<?php getchefsearch_form(); ?>
+			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
 			<p><?php echo 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.'; ?></p>
-			<?php getchefsearch_form(); ?>
+			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+	</div>
+</section>

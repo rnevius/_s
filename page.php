@@ -26,10 +26,10 @@ get_header(); ?>
 					endif;
 				?>
 
-			<?php endwhile; // end of the loop. ?>
+			<?php endwhile; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
-<?php getchefsidebar(); ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

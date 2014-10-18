@@ -28,5 +28,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php getchefsidebar(); ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
