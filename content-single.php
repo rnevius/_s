@@ -1,6 +1,6 @@
 <?php
 /**
- * @package _s
+ * @package chefs
  */
 ?>
 
@@ -9,7 +9,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php _s_posted_on(); ?>
+			<?php chefs_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -24,6 +24,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php _s_entry_footer(); ?>
+		<?php chefs_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

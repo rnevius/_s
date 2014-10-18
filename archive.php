@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s
+ * @package chefs
  */
 
 get_header(); ?>
@@ -90,7 +90,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php _s_paging_nav(); ?>
+			<?php chefs_paging_nav(); ?>
 
 		<?php else : ?>
 
@@ -101,5 +101,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php getchefsidebar(); ?>
 <?php get_footer(); ?>

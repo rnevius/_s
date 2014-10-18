@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s
+ * @package chefs
  */
 ?>
 
@@ -18,15 +18,15 @@
 
 			<p><?php printf( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
-		<?php elseif ( is_search() ) : ?>
+		<?php elseif ( ischefsearch() ) : ?>
 
 			<p><?php echo 'Sorry, but nothing matched your search terms. Please try again with some different keywords.'; ?></p>
-			<?php get_search_form(); ?>
+			<?php getchefsearch_form(); ?>
 
 		<?php else : ?>
 
 			<p><?php echo 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.'; ?></p>
-			<?php get_search_form(); ?>
+			<?php getchefsearch_form(); ?>
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
